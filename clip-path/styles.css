@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+.shape {
+  width: 300px;
+  height: 300px;
+  background: rgb(110, 195, 223);
+}
+
+.fancy-card {
+  clip-path: path(
+    "M 10,40 L 70,40 A 10,10 0,0,0 80,30 L 80,10 A 10,10 0,0,1 90,0 L 170,0 A 10,10 0,0,1 180,10 L 180,190 A 10,10 0,0,1 170,200 L 10,200 A 10,10 0,0,1 0,190 L 0,50 A 10,10 0,0,1 10, 40 Z"
+  );
+}
+
+.fancy-button {
+  height: 120px;
+  width: 220px;
+  clip-path: inset(20px 20px 50px round 15px 0);
+}
