@@ -1,0 +1,35 @@
+<div></div>
+<style>
+  body {
+    background: #6cb3a9;
+    align-content: center;
+  }
+  div {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 50% 50%,
+        #f6df96 0,
+        25px,
+        transparent 25px
+      ),
+      radial-gradient(circle at 50% 50%, #781728 0, 35px, transparent 35px),
+      linear-gradient(#d25b70 0% 45%, #781728 45% 55%, #ffffff 55%);
+    &:before,
+    &:after {
+      display: block;
+      content: "";
+      background: #6cb3a9;
+      width: 20;
+      height: 20;
+      position: absolute;
+      top: 140;
+      left: 90;
+    }
+    &:after {
+      left: 290;
+    }
+  }
+</style>
